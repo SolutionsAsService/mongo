@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About: Learn MongoDB</title><meta name="description" content="How the Learn MongoDB results are produced, and what is not covered.">
+<link rel="canonical" href="https://learnmongo.shadw.app/about"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="About: Learn MongoDB"><meta property="og:description" content="How the Learn MongoDB results are produced, and what is not covered."><meta property="og:type" content="website"><meta property="og:url" content="https://learnmongo.shadw.app/about">
+<link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="top"><a class="brand" href="index.html">Learn<b>Mongo</b></a><nav aria-label="Pages"><a href="index.html">Home</a><a href="documents.html">Documents</a><a href="aggregates.html">Aggregate</a><a href="joins.html">Join</a><a href="about.html" aria-current=page>About</a></nav></header>
+<main id="main"><h1>About</h1><p class="lede">The only claims here are ones the build checks.</p>
+<h2>How the numbers get here</h2><p><code>python3 _src/build.py</code> runs each query in <code>_src/queries.json</code> with <code>_src/evaluator.py</code> on <code>_src/data.json</code>, then runs the equivalent SQL in SQLite on the same data and stops if the answers differ. Eleven of eleven agreed at build time.</p>
+<h2>What is not covered</h2><p>The evaluator is this site's own, about 150 lines, and covers only the operators shown. It is not <code>mongod</code>: indexes, ObjectId generation, type ordering, transactions and every other operator are outside it. To see a result from a real server, run the shown query in <code>mongosh</code>. Data is invented; nobody in it is real.</p>
+<h2>Source</h2><p>This site lives in <a href="https://github.com/SolutionsAsService/mongo/tree/master/learn-mongodb">learn-mongodb/</a> of a fork of the MongoDB server repository; it does not touch the server code.</p></main>
+<footer><p>Results come from this site's own evaluator for a slice of the MongoDB query language, not from a running mongod, and are checked against the same queries in SQLite. Invented data. <a href="https://github.com/SolutionsAsService/mongo/tree/master/learn-mongodb">Source</a>. By SolutionsAsService.</p></footer></body></html>

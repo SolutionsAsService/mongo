@@ -1,0 +1,20 @@
+{
+  "users": [
+    {"_id":1,"first_name":"Ana","last_name":"Silva","age":25},
+    {"_id":2,"first_name":"Li","last_name":"Wei","age":25},
+    {"_id":3,"first_name":"Omar","last_name":"Haddad","age":42},
+    {"_id":4,"first_name":"Mira","last_name":"Novak","age":19},
+    {"_id":5,"first_name":"Tom","last_name":"Ellis","age":17},
+    {"_id":6,"first_name":"Priya","last_name":"Nair","age":34},
+    {"_id":7,"first_name":"Sven","last_name":"Berg","age":19}
+  ],
+  "orders": [
+    {"_id":101,"user_id":1,"order_amount":120.0},
+    {"_id":102,"user_id":1,"order_amount":45.5},
+    {"_id":103,"user_id":2,"order_amount":80.0},
+    {"_id":104,"user_id":4,"order_amount":30.0},
+    {"_id":105,"user_id":4,"order_amount":15.25},
+    {"_id":106,"user_id":6,"order_amount":200.0},
+    {"_id":107,"user_id":99,"order_amount":60.0}
+  ]
+}

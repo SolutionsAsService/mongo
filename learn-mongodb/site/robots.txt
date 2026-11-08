@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://learnmongo.shadw.app/sitemap.xml
